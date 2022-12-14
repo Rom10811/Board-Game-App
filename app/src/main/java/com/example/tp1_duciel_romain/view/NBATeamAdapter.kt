@@ -11,10 +11,10 @@ import com.example.tp1_duciel_romain.R
 import com.example.tp1_duciel_romain.databinding.ItemCustomRecyclerBinding
 import com.example.tp1_duciel_romain.databinding.ItemCustomRecyclerFooterBinding
 import com.example.tp1_duciel_romain.databinding.ItemCustomRecyclerHeaderBinding
-import com.example.tp1_duciel_romain.view.model.ObjectDataHeaderSample
-import com.example.tp1_duciel_romain.view.model.MyObjectForRecyclerView
-import com.example.tp1_duciel_romain.view.model.ObjectDataFooterSample
-import com.example.tp1_duciel_romain.view.model.RecyclerViewData
+import com.example.tp1_duciel_romain.model.ObjectDataHeaderSample
+import com.example.tp1_duciel_romain.model.MyObjectForRecyclerView
+import com.example.tp1_duciel_romain.model.ObjectDataFooterSample
+import com.example.tp1_duciel_romain.model.RecyclerViewData
 
 private val diffItemUtils = object : DiffUtil.ItemCallback<MyObjectForRecyclerView>() {
 
@@ -120,7 +120,7 @@ class NBATeamViewHolder(private val binding: ItemCustomRecyclerBinding, onItemCl
     fun bind(recyclerDataSample: RecyclerViewData) {
         ui = recyclerDataSample
         binding.itemRecyclerViewTeamName.text = recyclerDataSample.teamName
-        binding.itemRecyclerViewTeamRank.text = recyclerDataSample.teamRank
+        binding.itemRecyclerViewTeamRank.text = recyclerDataSample.teamRank.toString()
         Glide.with(itemView.context)
             .load(recyclerDataSample.teamLogo)
             .placeholder(R.drawable.ic_baseline_sports_basketball_24)

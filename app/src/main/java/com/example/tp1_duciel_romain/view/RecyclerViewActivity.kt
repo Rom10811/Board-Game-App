@@ -1,9 +1,9 @@
 package com.example.tp1_duciel_romain.view
 
 import android.os.Bundle
+import android.os.OutcomeReceiver
 import android.view.HapticFeedbackConstants
 import android.view.View
-import android.widget.AbsListView.RecyclerListener
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -11,11 +11,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tp1_duciel_romain.databinding.ActivityRecyclerViewBinding
-import com.example.tp1_duciel_romain.view.model.MyObjectForRecyclerView
-import com.example.tp1_duciel_romain.view.model.ObjectDataFooterSample
-import com.example.tp1_duciel_romain.view.model.ObjectDataHeaderSample
-import com.example.tp1_duciel_romain.view.model.RecyclerViewData
+import com.example.tp1_duciel_romain.model.MyObjectForRecyclerView
+import com.example.tp1_duciel_romain.model.RecyclerViewData
 import com.example.tp1_duciel_romain.viewmodel.NBATeamViewModel
+import kotlin.random.Random
 
 class RecyclerViewActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRecyclerViewBinding
@@ -44,6 +43,10 @@ class RecyclerViewActivity : AppCompatActivity() {
         // We set the adapter to recycler view
         binding.recyclerView.adapter = adapter
 
+        binding.addItemButton.setOnClickListener{addNBATeam()}
+
+        binding.deleteAllItemButton.setOnClickListener{removeAllNBATeam()}
+
     }
 
     override fun onStart() {
@@ -61,5 +64,32 @@ class RecyclerViewActivity : AppCompatActivity() {
     private fun onItemClick(objectDataSample: RecyclerViewData, view : View) {
         view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
         Toast.makeText(this, objectDataSample.teamName, Toast.LENGTH_LONG).show()
+    }
+
+
+    var estRankCount = 0
+    var ouestRankCount = 0
+    private fun addNBATeam()
+    {
+        val arr = arrayOf("Est", "Ouest")
+        val randomConf = Random.nextInt(0,2)
+        val random = Random.nextInt(1,999)
+        if(randomConf == 0)
+        {
+            estRankCount += 1
+            viewModel.insertNBATeam("NBA $random", arr[randomConf], estRankCount, "https://upload.wikimedia.org/wikipedia/fr/thumb/8/87/NBA_Logo.svg/1200px-NBA_Logo.svg.png")
+        }
+        else
+        {
+            ouestRankCount +=1
+            viewModel.insertNBATeam("NBA $random", arr[randomConf], ouestRankCount, "https://upload.wikimedia.org/wikipedia/fr/thumb/8/87/NBA_Logo.svg/1200px-NBA_Logo.svg.png")
+        }
+    }
+
+    private fun removeAllNBATeam()
+    {
+        viewModel.deleteAllNBATeam()
+        estRankCount = 0
+        ouestRankCount = 0
     }
 }
