@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.tp1_duciel_romain.R
 import com.example.tp1_duciel_romain.databinding.ItemCustomRecyclerBinding
 import com.example.tp1_duciel_romain.databinding.ItemCustomRecyclerFooterBinding
 import com.example.tp1_duciel_romain.databinding.ItemCustomRecyclerHeaderBinding
@@ -118,7 +120,11 @@ class NBATeamViewHolder(private val binding: ItemCustomRecyclerBinding, onItemCl
     fun bind(recyclerDataSample: RecyclerViewData) {
         ui = recyclerDataSample
         binding.itemRecyclerViewTeamName.text = recyclerDataSample.teamName
-        binding.itemRecyclerViewTeamConference.text = recyclerDataSample.conference
+        binding.itemRecyclerViewTeamRank.text = recyclerDataSample.teamRank
+        Glide.with(itemView.context)
+            .load(recyclerDataSample.teamLogo)
+            .placeholder(R.drawable.ic_baseline_sports_basketball_24)
+            .into(binding.itemRecyclerViewTeamLogo)
     }
 }
 

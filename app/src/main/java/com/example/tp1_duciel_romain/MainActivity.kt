@@ -1,12 +1,9 @@
 package com.example.tp1_duciel_romain
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.RecyclerView
 import com.example.tp1_duciel_romain.databinding.ActivityMainBinding
-import com.example.tp1_duciel_romain.databinding.ActivityRecyclerViewBinding
 import com.example.tp1_duciel_romain.view.RecyclerViewActivity
 
 
