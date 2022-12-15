@@ -1,10 +1,10 @@
-package com.example.tp1_duciel_romain.model
+package com.example.tp1_duciel_romain.NBA.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-sealed class MyObjectForRecyclerView()
+sealed class MyObjectForRecyclerView
 
 data class ObjectDataHeaderSample(val header: String) : MyObjectForRecyclerView()
 data class ObjectDataFooterSample(val footer: String) : MyObjectForRecyclerView()

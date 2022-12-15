@@ -1,9 +1,9 @@
-package com.example.tp1_duciel_romain.repository
+package com.example.tp1_duciel_romain.NBA.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.map
 import com.example.tp1_duciel_romain.architecture.CustomApplication
-import com.example.tp1_duciel_romain.model.*
+import com.example.tp1_duciel_romain.NBA.model.*
 
 class NBATeamRepository {
     private val mNBATeamDao = CustomApplication.instance.mApplicationDatabase.mNBATeamDao()

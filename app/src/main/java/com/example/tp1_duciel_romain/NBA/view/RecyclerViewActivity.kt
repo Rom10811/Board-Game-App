@@ -1,7 +1,6 @@
-package com.example.tp1_duciel_romain.view
+package com.example.tp1_duciel_romain.NBA.view
 
 import android.os.Bundle
-import android.os.OutcomeReceiver
 import android.view.HapticFeedbackConstants
 import android.view.View
 import android.widget.Toast
@@ -11,9 +10,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tp1_duciel_romain.databinding.ActivityRecyclerViewBinding
-import com.example.tp1_duciel_romain.model.MyObjectForRecyclerView
-import com.example.tp1_duciel_romain.model.RecyclerViewData
-import com.example.tp1_duciel_romain.viewmodel.NBATeamViewModel
+import com.example.tp1_duciel_romain.NBA.model.MyObjectForRecyclerView
+import com.example.tp1_duciel_romain.NBA.model.RecyclerViewData
+import com.example.tp1_duciel_romain.NBA.viewmodel.NBATeamViewModel
 import kotlin.random.Random
 
 class RecyclerViewActivity : AppCompatActivity() {

@@ -1,11 +1,11 @@
-package com.example.tp1_duciel_romain.viewmodel
+package com.example.tp1_duciel_romain.NBA.viewmodel
 
 import androidx.lifecycle.*
-import com.example.tp1_duciel_romain.repository.NBATeamRepository
-import com.example.tp1_duciel_romain.model.MyObjectForRecyclerView
-import com.example.tp1_duciel_romain.model.ObjectDataFooterSample
-import com.example.tp1_duciel_romain.model.ObjectDataHeaderSample
-import com.example.tp1_duciel_romain.model.RecyclerViewData
+import com.example.tp1_duciel_romain.NBA.repository.NBATeamRepository
+import com.example.tp1_duciel_romain.NBA.model.MyObjectForRecyclerView
+import com.example.tp1_duciel_romain.NBA.model.ObjectDataFooterSample
+import com.example.tp1_duciel_romain.NBA.model.ObjectDataHeaderSample
+import com.example.tp1_duciel_romain.NBA.model.RecyclerViewData
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

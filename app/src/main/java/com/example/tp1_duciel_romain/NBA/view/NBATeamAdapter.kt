@@ -1,4 +1,4 @@
-package com.example.tp1_duciel_romain.view
+package com.example.tp1_duciel_romain.NBA.view
 
 import android.view.LayoutInflater
 import android.view.View
@@ -11,10 +11,10 @@ import com.example.tp1_duciel_romain.R
 import com.example.tp1_duciel_romain.databinding.ItemCustomRecyclerBinding
 import com.example.tp1_duciel_romain.databinding.ItemCustomRecyclerFooterBinding
 import com.example.tp1_duciel_romain.databinding.ItemCustomRecyclerHeaderBinding
-import com.example.tp1_duciel_romain.model.ObjectDataHeaderSample
-import com.example.tp1_duciel_romain.model.MyObjectForRecyclerView
-import com.example.tp1_duciel_romain.model.ObjectDataFooterSample
-import com.example.tp1_duciel_romain.model.RecyclerViewData
+import com.example.tp1_duciel_romain.NBA.model.ObjectDataHeaderSample
+import com.example.tp1_duciel_romain.NBA.model.MyObjectForRecyclerView
+import com.example.tp1_duciel_romain.NBA.model.ObjectDataFooterSample
+import com.example.tp1_duciel_romain.NBA.model.RecyclerViewData
 
 private val diffItemUtils = object : DiffUtil.ItemCallback<MyObjectForRecyclerView>() {
 
