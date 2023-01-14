@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".architecture.CustomApplication"
         android:allowBackup="false"
@@ -13,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projet_android_restoy_duciel"
         tools:targetApi="31">
+        <activity
+            android:name="com.java.projet_android_restoy_duciel.Firebase.Register.ActivityRegister"
+            android:exported="false" />
+        <activity
+            android:name="com.java.projet_android_restoy_duciel.Firebase.Login.ActivityLogin"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -28,4 +36,5 @@
         </activity>
         <activity android:name="com.java.projet_android_restoy_duciel.SW.view.RecyclerViewActivitySW" />
     </application>
+
 </manifest>

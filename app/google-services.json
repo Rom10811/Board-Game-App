@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "462864285802",
+    "project_id": "projet-android-restoy-duciel",
+    "storage_bucket": "projet-android-restoy-duciel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462864285802:android:d222ed66b1c1a8e8420a13",
+        "android_client_info": {
+          "package_name": "com.java.projet_android_restoy_duciel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462864285802-b5aa9bng91bobojn4rr823s5hjt4s090.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwcDZCjDOHMF9JvjUOSNSx87VrGQM-akI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462864285802-b5aa9bng91bobojn4rr823s5hjt4s090.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
