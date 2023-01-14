@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">TP1_Duciel_Romain</string>
+    <string name="app_name">Project Restoy Duciel</string>
+    <string name="projet_restoy_duciel">Project Restoy Duciel</string>
+    <string name="dev">Developers</string>
+    <string name="func2">Functionality 2</string>
+    <string name="func3">Functionality 3</string>
 </resources>

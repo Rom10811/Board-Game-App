@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TP1_Duciel_Romain"
+        android:theme="@style/Theme.Projet_android_restoy_duciel"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
@@ -26,7 +26,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name="com.example.tp1_duciel_romain.NBA.view.RecyclerViewActivity" />
-        <activity android:name="com.example.tp1_duciel_romain.SW.view.RecyclerViewActivitySW" />
+        <activity android:name="com.java.projet_android_restoy_duciel.SW.view.RecyclerViewActivitySW" />
     </application>
 </manifest>

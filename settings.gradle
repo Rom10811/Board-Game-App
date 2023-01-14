@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "TP1_Duciel_Romain"
+rootProject.name = "Projet_android_restoy_duciel"
 include ':app'

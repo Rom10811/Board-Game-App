@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Projet Restoy Duciel</string>
+    <string name="projet_restoy_duciel">Projet Restoy Duciel</string>
+    <string name="dev">Développeurs</string>
+    <string name="func2">Fonctionnalité 2</string>
+    <string name="func3">Fonctionnalité 3</string>
+</resources>

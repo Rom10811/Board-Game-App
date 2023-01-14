@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace 'com.example.tp1_duciel_romain'
-    compileSdk 32
+    namespace 'com.java.projet_android_restoy_duciel'
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.tp1_duciel_romain"
-        minSdk 25
-        targetSdk 32
+        applicationId "com.java.projet_android_restoy_duciel"
+        minSdk 26
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
