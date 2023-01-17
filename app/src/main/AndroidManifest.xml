@@ -34,7 +34,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name="com.java.projet_android_restoy_duciel.SW.view.RecyclerViewActivitySW" />
+        <activity android:name="com.java.projet_android_restoy_duciel.Boardgame.view.activity.RecyclerViewActivity" />
+        <activity android:name="com.java.projet_android_restoy_duciel.Boardgame.view.activity.SearchBoardgameViewActivity" />
+
     </application>
 
 </manifest>

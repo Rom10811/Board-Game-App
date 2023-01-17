@@ -3,17 +3,17 @@ package com.java.projet_android_restoy_duciel.architecture
 import android.app.Application
 import androidx.room.Room
 
-class CustomApplication:Application() {
+class CustomApplication : Application() {
+
     companion object {
         lateinit var instance: CustomApplication
     }
 
-
-    val mApplicationDatabase: CustomRoomDatabase by lazy {
+    val mBoardGameDatabase : CustomRoomDatabase by lazy {
         Room.databaseBuilder(
             applicationContext,
             CustomRoomDatabase::class.java,
-            "Database"
+            "BoardGameDatabase"
         ).fallbackToDestructiveMigration().build()
     }
 
@@ -22,5 +22,4 @@ class CustomApplication:Application() {
         super.onCreate()
         instance = this
     }
-
 }

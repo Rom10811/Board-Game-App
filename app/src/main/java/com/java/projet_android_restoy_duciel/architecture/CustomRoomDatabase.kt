@@ -2,18 +2,18 @@ package com.java.projet_android_restoy_duciel.architecture
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.java.projet_android_restoy_duciel.SW.data.local.SWMonstersDao
-import com.java.projet_android_restoy_duciel.SW.data.model.SWMonstersRoom
+import com.java.projet_android_restoy_duciel.Boardgame.data.local.BoardgameDao
+import fr.upjv.ccm.tp1.model.BoardgameRoom
 
 @Database(
     entities = [
-        SWMonstersRoom::class
+        BoardgameRoom::class
     ],
-    version = 2,
+    version = 3,
     exportSchema = false
 )
-
 abstract class CustomRoomDatabase : RoomDatabase() {
-    abstract fun mSWMonstersDAO(): SWMonstersDao
+
+    abstract fun BoardgameDao(): BoardgameDao
 }
 
