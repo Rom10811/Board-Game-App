@@ -1,9 +1,14 @@
 package com.java.projet_android_restoy_duciel.Boardgame.view.activity
 
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -12,6 +17,8 @@ import com.google.android.material.snackbar.Snackbar
 import com.java.projet_android_restoy_duciel.Boardgame.view.model.BoardgameUI
 import com.java.projet_android_restoy_duciel.Boardgame.view.model.ObjectForUi
 import com.java.projet_android_restoy_duciel.Boardgame.view.viewmodel.BoardgameViewModel
+import com.java.projet_android_restoy_duciel.Notification.CustomNotificationManager
+import com.java.projet_android_restoy_duciel.R
 import com.java.projet_android_restoy_duciel.databinding.ActivityRecyclerViewBinding
 import fr.upjv.ccm.tp1.view.BoardgameAdapter
 
@@ -71,6 +78,9 @@ class RecyclerViewActivity : AppCompatActivity() {
 
     private fun onItemClick(boardgame: BoardgameUI) {
         viewModel.deleteOneBoardgame(boardgame.name)
+        with(CustomNotificationManager(this)){
+            createNotificationCompatBuilder(boardgame.name)
+        }
     }
 
 }

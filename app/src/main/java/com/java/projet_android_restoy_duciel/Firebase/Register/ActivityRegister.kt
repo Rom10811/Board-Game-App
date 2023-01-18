@@ -19,7 +19,17 @@ class ActivityRegister : AppCompatActivity() {
         setContentView(bindingRegister.root)
 
         bindingRegister.btnRegister.setOnClickListener {
-            createAccount(bindingRegister.registerUsername.text.toString(), bindingRegister.registerPassword.text.toString())
+            if (bindingRegister.registerPassword.text.isNotEmpty() && bindingRegister.registerUsername.text.isNotEmpty()) {
+                createAccount(
+                    bindingRegister.registerUsername.text.toString(),
+                    bindingRegister.registerPassword.text.toString()
+                )
+            } else {
+                Toast.makeText(
+                    baseContext, "Veuillez renseigner les champs.",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
     }
 
